@@ -18,3 +18,7 @@ spring:
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml
     enabled: true
+
+omdb:
+  base-url: ${OMDB_BASE_URL:http://www.omdbapi.com}
+  api-key: ${OMDB_API_KEY:897a6895}
