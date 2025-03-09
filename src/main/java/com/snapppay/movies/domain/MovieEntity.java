@@ -39,4 +39,7 @@ public class MovieEntity extends AuditEntity {
 
     @Column(name = "rate")
     private float rate;
+
+    @Column(name = "imdb_id")
+    private String imdbId;
 }
