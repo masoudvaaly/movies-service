@@ -22,3 +22,8 @@ spring:
 omdb:
   base-url: ${OMDB_BASE_URL:http://www.omdbapi.com}
   api-key: ${OMDB_API_KEY:897a6895}
+
+jwt:
+  secret:
+    key: ${JWT_SECRET_KEY:"s9f7Ij5Xp2vA8q1wE4rT6yUo3zLk9mNcB0vG7dF4hJ8uP5xQ2:"}
+  access-token-ttl: ${JWT_TOKEN_EXPIRATION_TIME:200}
