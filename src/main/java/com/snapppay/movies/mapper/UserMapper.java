@@ -1,7 +1,7 @@
 package com.snapppay.movies.mapper;
 
 import com.snapppay.movies.domain.UserEntity;
-import com.snapppay.movies.dto.RegisterDto;
+import com.snapppay.movies.dto.auth.RegisterDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

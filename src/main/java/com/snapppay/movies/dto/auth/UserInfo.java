@@ -1,8 +1,6 @@
-package com.snapppay.movies.dto;
+package com.snapppay.movies.dto.auth;
 
 import lombok.*;
-
-import java.time.Instant;
 
 @Data
 @Builder

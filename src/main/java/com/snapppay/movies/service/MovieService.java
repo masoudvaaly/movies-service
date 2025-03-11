@@ -1,10 +1,13 @@
 package com.snapppay.movies.service;
 
 import com.snapppay.movies.domain.MovieEntity;
+import com.snapppay.movies.dto.auth.AuthenticationResponseDto;
+import com.snapppay.movies.dto.movie.UserMoviePreferencesDto;
 import com.snapppay.movies.repository.MovieRepository;
 import com.snapppay.movies.service.omdb.OmdbFeign;
 import com.snapppay.movies.service.omdb.dto.SearchResponse;
 import com.snapppay.movies.utils.StringUtils;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -20,8 +23,10 @@ public class MovieService {
     private final MovieRepository movieRepository;
     private final OmdbFeign omdbFeign;
 
-//    @Scheduled(cron = "0 * * * * ?")
+    @Scheduled(cron = "0 * * * * ?")
     public void fetchMovies() {
+        //todo this provider doesn't have a good api for fetching datas.
+        // it's better to use different apis (this is for test purposes)
 
         //todo for test we use current year, upgrade it to search on all years
         String year = "2025";
@@ -49,4 +54,9 @@ public class MovieService {
 
     }
 
+    public AuthenticationResponseDto addUserPreferences(@Valid UserMoviePreferencesDto dto) {
+        //todo it's better to have a nosql db to save these filters for each user for
+        // faster reads and un structured data suited for each user
+        return null;
+    }
 }

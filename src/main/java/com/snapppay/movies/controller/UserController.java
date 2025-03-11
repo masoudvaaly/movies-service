@@ -1,8 +1,8 @@
 package com.snapppay.movies.controller;
 
-import com.snapppay.movies.dto.AuthenticationResponseDto;
-import com.snapppay.movies.dto.LoginDto;
-import com.snapppay.movies.dto.RegisterDto;
+import com.snapppay.movies.dto.auth.AuthenticationResponseDto;
+import com.snapppay.movies.dto.auth.LoginDto;
+import com.snapppay.movies.dto.auth.RegisterDto;
 import com.snapppay.movies.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
