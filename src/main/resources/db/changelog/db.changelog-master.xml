@@ -7,4 +7,5 @@
 
     <include file="/db/changelog/changes/add-movies-table.xml"/>
     <include file="/db/changelog/changes/update-movies-table.xml"/>
+    <include file="/db/changelog/changes/add-users-table.xml"/>
 </databaseChangeLog>
