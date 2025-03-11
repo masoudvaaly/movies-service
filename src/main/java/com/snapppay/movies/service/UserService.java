@@ -1,9 +1,9 @@
 package com.snapppay.movies.service;
 
 import com.snapppay.movies.domain.UserEntity;
-import com.snapppay.movies.dto.AuthenticationResponseDto;
-import com.snapppay.movies.dto.LoginDto;
-import com.snapppay.movies.dto.RegisterDto;
+import com.snapppay.movies.dto.auth.AuthenticationResponseDto;
+import com.snapppay.movies.dto.auth.LoginDto;
+import com.snapppay.movies.dto.auth.RegisterDto;
 import com.snapppay.movies.exception.CustomException;
 import com.snapppay.movies.mapper.UserMapper;
 import com.snapppay.movies.repository.UserRepository;

@@ -1,4 +1,4 @@
-package com.snapppay.movies.dto;
+package com.snapppay.movies.dto.auth;
 
 import jakarta.validation.constraints.NotBlank;
 

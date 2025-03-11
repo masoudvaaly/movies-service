@@ -1,6 +1,6 @@
 package com.snapppay.movies.utils;
 
-import com.snapppay.movies.dto.UserInfo;
+import com.snapppay.movies.dto.auth.UserInfo;
 import com.snapppay.movies.exception.CustomException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
