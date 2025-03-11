@@ -28,8 +28,12 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth ->
                         auth.requestMatchers(
                                         AntPathRequestMatcher.antMatcher("/api/users/login"),
-                                        AntPathRequestMatcher.antMatcher("/api/users/register")
-                                ).permitAll()
+                                        AntPathRequestMatcher.antMatcher("/api/users/register"),
+                                        AntPathRequestMatcher.antMatcher("/v3/api-docs*/**"),
+                                        AntPathRequestMatcher.antMatcher("/swagger-ui.html"),
+                                        AntPathRequestMatcher.antMatcher("/swagger-ui/**")
+                                )
+                                .permitAll()
                                 .anyRequest()
                                 .authenticated()
                 )

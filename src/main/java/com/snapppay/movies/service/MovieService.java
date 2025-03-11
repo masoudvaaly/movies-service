@@ -20,7 +20,7 @@ public class MovieService {
     private final MovieRepository movieRepository;
     private final OmdbFeign omdbFeign;
 
-    @Scheduled(cron = "0 * * * * ?")
+//    @Scheduled(cron = "0 * * * * ?")
     public void fetchMovies() {
 
         //todo for test we use current year, upgrade it to search on all years
